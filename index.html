@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+		/>
+		<title>Document</title>
+		<style>
+			body,
+			p,
+			h1 {
+				padding: 0;
+				margin: 0;
+			}
+			.heading {
+				height: 60px;
+				background-color: yellow;
+			}
+			.note_body,
+			.note {
+				position: relative;
+			}
+			.add_note {
+				position: absolute;
+				top: 5px;
+				right: 40px;
+				/* background-color: white; */
+			}
+			.add_note button {
+				background-color: white;
+			}
+			.add_note button:hover {
+				background-color: orange;
+				color: white;
+			}
+			.add_note i {
+				padding-right: 5px;
+			}
+			.note {
+				width: 250px;
+				margin: 20px 0 0 50px;
+				/* display: block; */
+			}
+			.operation {
+				position: absolute;
+				top: 10px;
+				right: 5px;
+			}
+			.sevedText,
+			textarea {
+				background-color: aliceblue;
+				width: 100%;
+				height: 150px;
+			}
+			.hidden {
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<div class="heading">
+				<h1><i class="fa-solid fa-note-sticky"></i>My Notes</h1>
+			</div>
+			<div class="note_body">
+				<div class="add_note">
+					<button class="add" id="add">
+						<i class="fa-solid fa-angle-right"></i>
+						ADD NOTE
+					</button>
+				</div>
+				<!-- <div class="note">
+					<div class="operation">
+						<button class="edit">
+							<i class="fa-solid fa-pen-to-square"></i>
+						</button>
+						<button class="delete">
+							<i class="fa-solid fa-trash-can"></i>
+						</button>
+					</div>
+                    <div class="sevedText"> </div>
+						<textarea class = ""></textarea>
+					
+				</div> -->
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
